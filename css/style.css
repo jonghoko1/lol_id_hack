@@ -1,0 +1,260 @@
+* {
+    font-family: 'Seol Sans', sans-serif;
+}
+
+body {
+    background-image: url(https://lolstatic-a.akamaihd.net/rso-login-page/3.2.32/assets/lol_desktop_background_2x.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-repeat : no-repeat;
+    background-size : cover;
+    font-style: normal;
+}
+
+#main {
+    margin: 34px 51px;
+}
+
+#logo {
+    height: 73px;
+}
+
+#mini_logo_box {
+    width: 202px;
+    height: 58px;
+    margin: 11px 34px 34px 0px;
+}
+
+#login_box {
+    height: 720px;
+    width: 576px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #f9f9f9;
+}
+
+#mini_login_box {
+    padding: 102px 68px 0px 68px;
+    height: 618px;
+    width: 440px;
+}
+
+#login {
+    width: 96px;
+    height: 39px;
+    margin: auto;
+    margin-bottom: 68px;
+    text-align: center;
+}
+
+#footer {
+    height: 57px;
+    margin-top: 150px;
+}
+
+.text1, .text2 {
+    color: white;
+    margin: 0px;
+    font-size: 25px;
+    cursor: default;
+}
+
+.text3 {
+    font-size: 32px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.text4, .text5 {
+    margin: 0px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #525252;
+    font-weight: 700;
+}
+
+#id, #password {
+    width: 436.5px;
+    height: 69px;
+    border-radius: 5px;
+    background: rgba(126,126,126,0.1);
+}
+
+#username, #userpassword {
+    font-weight: 900;
+}
+
+#id input, #password input {
+    width: 420px;
+    height: 34px;
+    border: 0;
+    padding-top: 3px;
+    padding-left: 10px;
+    background: rgb(237 237 237 / 10%);
+    font-size: 22px;
+}
+
+.none {
+    height: 20px;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+input:focus {
+    outline: none;
+}
+
+#login24 {
+    width: 440.5px;
+    height: 49px;
+    margin: 11.2px 0px;
+}
+
+#login24_mini_box{
+    width: 440.5px;
+    height: 26.5px;
+    margin: 11.2px 0px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    height: 22px;
+    width: 22px;
+    background-color: rgba(126,126,126,0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 7px;
+}
+
+input[type="checkbox"] + label {
+    color: #111111;
+    font-size: 18px;
+    font-family: 'Seol Sans', sans-serif;
+    top: 0px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:after {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 22px;
+    color: white;
+    display: none;
+}
+
+input[type="checkbox"]:hover {
+    background-color: #a5a5a5;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #0bc4e2;
+}
+
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+
+#arrow {
+    margin: 0px 158.5px 0px 158.5px;
+    height: 105px;
+    width: 123px;
+    left: 0;
+    right: 0;
+    background-image: url(arrow.jpg);
+    background-repeat : no-repeat;
+}
+
+#arrow:hover {
+    margin: 0px 158.5px 0px 158.5px;
+    height: 105px;
+    width: 123px;
+    left: 0;
+    right: 0;
+    background-image: url(arrow_blue.jpg);
+    background-repeat : no-repeat;
+}
+
+#db {
+    width: 115px;
+    height: 105px;
+    margin-left: 5px;
+    opacity: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#no_login {
+    padding-top: 45px;
+    color: #666666;
+    padding-bottom: 11px;
+    text-align: center;
+    font-size: 14.5;
+}
+
+#new_id {
+    padding-bottom: 45px;
+    color: #666666;
+    text-align: center;
+    font-size: 14.5;
+    font-weight: 700;
+}
+
+#no_login a {
+    text-decoration: none;
+    color: #666666;
+    text-align: center;
+    font-size: 14.5;
+    font-weight: 700;
+}
+
+#new_id a {
+    text-decoration: none;
+    color: #666666;
+    text-align: center;
+    font-size: 14.5;
+    font-weight: 700;
+}
+
+#no_login a:hover {
+    cursor: pointer;
+}
+
+#new_id a:hover {
+    cursor: pointer;
+}
+
+#new_id b:hover {
+    cursor: pointer;
+}
+
+#footer_1 {
+    margin-top: 50px;
+}
+
+#footer_2 {
+    padding-bottom: 50px;
+}
+
+#footer_1 a {
+    color: rgba(249,249,249,0.65);
+    text-decoration: none;
+    margin-right: 0.6666666666667rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    line-height: 110%;
+}
+
+p {
+    color: rgba(249,249,249,0.65);
+    text-transform: uppercase;
+    font-size: 0.638435832211083rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+}
